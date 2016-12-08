@@ -1,0 +1,359 @@
+html,body                       { width:100%; height:100%; max-width: 100% }
+
+body                            { padding:0; margin:0; font:12px 'Open Sans', sans-serif; background:#fff; color:#000; }
+
+* html main {
+    height: 100%;
+}
+
+div,menu,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,
+table,td,tr,form,fieldset,legend,label,select,input,textarea,button {
+    padding:0;
+    margin:0;
+    outline:none;
+    list-style:none;
+}
+button                         { cursor: pointer; padding: 0 }
+select, input, textarea,button { font:12px 'Open Sans', sans-serif;; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+img                            { vertical-align: top; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a                              { text-decoration:none; }
+a:link, a:visited              { font:12px 'Open Sans', sans-serif; color:#000; }
+a:hover                        { text-decoration:none; }
+
+/*----------------------------------------------------------------------------------*/
+/*-------------------------------------DEFAULT CLASSES------------------------------*/
+/*----------------------------------------------------------------------------------*/
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+}
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.title,
+.subscribe {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+}
+.title{
+    margin-top: 170px;
+    font: 700 72px 'Raleway', sans-serif;
+}
+.subscribe {
+    margin-bottom: 88px;
+    font: 30px 'Open Sans', sans-serif;
+}
+header {
+    margin-bottom: 85px;
+    text-align: center;
+}
+header h2 {
+    margin-bottom: 35px;
+    font: 30px 'Raleway', sans-serif;
+    color: #343435;
+}
+header p {
+    font: 16px 'Open Sans', sans-serif;
+    color: #717171;
+}
+/*--------------------end for all-----------------------*/
+/*-----------------------------------------------------*/
+/*--------------------------intro---------------------*/
+.head-intro {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto 0;
+    padding: 0 20px;
+}
+.navigation  li{
+    display: inline-block;
+}
+.navigation  li a {
+    padding: 10px 60px;
+    font: 700 16px 'Raleway', sans-serif;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+}
+.navigation  li a:hover {
+    border: 1px solid #fff;
+}
+
+.intro {
+    position: relative;
+    margin-top: -95px;
+    padding: 95px 0 0;
+    background: url("../images/bg_intro.png") top center no-repeat;
+    background-size: cover;
+}
+.intro::before {
+    content: "";
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 68px;
+    background-color: #fff;
+}
+.search {
+    max-width: 770px;
+    width: 100%;
+    margin: 0 auto;
+}
+.search [type="search"],
+.news-letter [type="email"] {
+    width: 570px;
+    height: 60px;
+    padding-left: 30px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+ [type="submit"] {
+    max-width: 196px;
+    width: 100%;
+    height: 60px;
+    margin-left: -5px;
+    background: #e7434e url("../images/boat-icone.png") 16% 50% no-repeat;
+    border: none;
+    border-radius: 0  5px 5px 0;
+    font: 700 14px 'Raleway', sans-serif;
+    color: #fff;
+}
+
+.indication {
+    position: relative;
+    max-width: 1200px;
+    margin: 230px auto 0;
+    padding: 30px 0;
+    width: 100%;
+    height: 140px;
+    text-align: center;
+    background: #fff;
+    box-shadow: 0px 13px 34px -8px rgba(0,0,0,0.75);
+}
+.indication li {
+    display: inline-block;
+    padding: 11px 92px;
+    border-right: 1px solid #d4d4d4;
+    font: 18px 'Open Sans', sans-serif;
+    color: #717171;
+}
+.indication li:last-child {
+    border-right: none;
+}
+.count {
+    display: block;
+    font: 700 30px 'Open Sans', sans-serif;
+    color: #343434;
+}
+/*----------------end intro--------------------*/
+/*------------------location-inform-----------*/
+.location-inform,
+.featured        {
+    padding: 100px 0;
+}
+.places,
+.featured-item {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 85px;
+    text-align: center;
+}
+.places li{
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+}
+.hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px 0 30px 30px;
+    position: absolute;
+    text-align: left;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #fff;
+}
+.count-boats,
+.prise-boats {
+    position: relative;
+    max-width: 80px;
+    width: 100%;
+    padding-left: 35px;
+    border-radius: 8px;
+    font: 700 16px/40px 'Open Sans', sans-serif;
+    background: #e7434e;
+}
+
+.count-boats:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 17px;
+    height: 17px;
+    top: 10px;
+    left: 15px;
+    background: url(../images/boat-icone.png) 16% 50% no-repeat;
+
+}
+.prise-boats {
+    max-width: 100px;
+    width: 100%;
+    padding-left: 10px;
+}
+.city {
+    font: 30px/40px 'Open Sans', sans-serif;
+}
+.country {
+    font: 100 20px 'Open Sans', sans-serif;
+}
+.more,
+.money   {
+    display: block;
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    font: 700 14px/40px 'Ralewey', sans-serif;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 1px solid #bdbdbd;
+    color: #343434;
+    cursor: pointer;
+}
+.more:hover {
+    border: 1px solid transparent;
+    background-color: #e7434e;
+    color: #fff;
+}
+/*----------------------------end location-inform-------------------------*/
+/*------------------------------------------------------------------------*/
+/*-----------------------------own-boat-----------------------------------*/
+.own-boat {
+    padding: 160px 0;
+    background: url("../images/bg-boat-section.png") top center no-repeat;
+    background-size: cover;
+}
+
+.money {
+    text-align: center;
+    background: #e7434e;
+    border: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    color: #fff;
+}
+.money:hover {
+    border: 1px solid #bdbdbd;
+    background: transparent;
+}
+/*----------------------------end-own-boat-------------------------*/
+/*----------------------------------------------------------------*/
+/*-----------------------------featured---------------------------*/
+
+.featured-item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between;
+}
+.featured-item li{
+    max-width: 570px;
+    margin: 15px;
+    width: 100%;
+    position: relative;
+}
+.loc-place .country {
+    padding-left: 20px;
+    background: url("../images/map-market.png") left no-repeat;
+}
+.room {
+    display: inline-block;
+    margin-left: 30px;
+    padding-left: 30px;
+    background: url("../images/users-icone.png") left no-repeat;
+}
+/*----------------------and-featured-----------------------*/
+/*--------------------------------------------------------*/
+/*------------------------footer-------------------------*/
+.footer-site {
+    background: #404040 url("../images/ft-border.png") left top repeat-x;
+
+}
+
+.footer-site .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 30px;
+    text-align: left;
+}
+.footer-site .container h3, legend {
+    margin-bottom: 30px;
+    font:  700 14px 'Raleway', sans-serif;
+    color: #fff;
+}
+.location a,
+.foot-featured a,
+.contact a {
+    font: 14px/34px 'Open Sans', sans-serif;
+    color: #fff;
+}
+
+.news-letter {
+    max-width: 415px;
+    width: 100%;
+}
+
+.news-letter [type="email"] {
+    width: 270px;
+    height: 40px;
+}
+.news-letter [type="submit"] {
+    max-width: 145px;
+    height: 40px;
+    font: 14px 'Open Sans', sans-serif;
+    background-image: none;
+}
+.social {
+    margin-top: 35px;
+}
+.social li {
+    display: inline-block;
+    margin-right: 20px;
+}
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:45px;
+    height: 45px;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: #717171;
+    color: #fff;
+}
+
+
+

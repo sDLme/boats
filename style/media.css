@@ -1,0 +1,116 @@
+
+@media all and (max-width: 1114px) {
+    .indication li {
+        padding: 11px 60px;
+    }
+}
+/*----------------------------------------------------------*/
+
+@media all and (max-width: 1024px) {
+    .footer-site .container {
+        flex-flow: row wrap;
+    }
+
+    .footer-site .container h3, legend {
+        margin: 15px 0;
+    }
+
+    .location,
+    .foot-featured,
+    .news-letter,
+    .contact {
+        margin: 0 15px;
+    }
+
+    .location a,
+    .foot-featured a,
+    .contact a {
+        line-height: 15px;
+    }
+
+    .news-letter {
+        margin: 20px auto;
+        text-align: center;
+        order: 4;
+    }
+
+    .social {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social li {
+        margin: 10px;
+    }
+
+}
+/*----------------------------------------------------------*/
+@media (max-width: 906px){
+    .navigation ul {
+        display: flex;
+        flex-flow: column wrap;
+        text-align: right;
+    }
+
+    .navigation li a {
+        padding: 0;
+        font-size: 12px;
+    }
+    .navigation  li a:hover {
+        border: none;
+        color: #f26c75;
+    }
+    .search {
+        width: 100%;
+    }
+    .search [type="search"],
+    .news-letter [type="email"] {
+        width: 100%;
+        border-radius: 5px;
+        margin-bottom: 10px;
+    }
+    .search[type="submit"] {
+        border-radius: 5px;
+        margin: 0 auto;
+    }
+    [type="submit"] {
+        margin: 0 auto;
+        display: block;
+        border-radius: 5px;
+    }
+    .indication {
+        height: 70px;
+        padding: 10px 0;
+    }
+    .indication li {
+        padding: 10px;
+        font-size: 12px;
+    }
+    .count {
+        font-size: 15px;
+    }
+
+}
+/*----------------------------------------------------------*/
+
+@media (max-width: 480px) {
+    .title {
+        font-size: 40px;
+    }
+    .subscribe {
+        font-size: 15px;
+    }
+    .city {
+        font-size: 15px;
+        line-height: 20px;
+    }
+    .country {
+        font-size: 10px;
+    }
+    .count-boats,
+    .prise-boats {
+        line-height: 35px;
+    }
+}
+
+
