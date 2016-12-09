@@ -177,11 +177,28 @@ header p {
     width: 100%;
     margin: 0 auto 85px;
     text-align: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 .places li{
     position: relative;
-    display: inline-block;
-    margin: 15px;
+    margin-right: 27px;
+    margin-bottom: 27px;
+}
+.places li:nth-child(1) {
+
+}
+.places li img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.places li a,
+.featured-item li a{
+    display: block;
+    position: relative;
 }
 .hover {
     display: flex;
@@ -285,6 +302,7 @@ header p {
     width: 100%;
     position: relative;
 }
+
 .loc-place .country {
     padding-left: 20px;
     background: url("../images/map-market.png") left no-repeat;
